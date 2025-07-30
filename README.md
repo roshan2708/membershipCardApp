@@ -33,27 +33,6 @@ Install Dependencies:flutter pub get
 Run the App:flutter run
 
 
-
-File Structure
-lib/
-├── main.dart
-├── app/
-│   ├── themes/
-│   │   └── app_theme.dart
-│   ├── constants/
-│   │   ├── colors.dart
-│   │   └── text_styles.dart
-│   └── widgets/
-│       ├── membership_card.dart
-│       ├── refresh_button.dart
-│       └── themed_toggle.dart
-├── screens/
-│   └── membership_screen.dart
-├── utils/
-│   └── qr_generator.dart
-└── splash/
-    └── splash_screen.dart
-
 Demo Video Link : https://drive.google.com/file/d/1TVB7OzJ2_-K-gMvE05bLmNDziw6sfDAd/view?usp=sharing
 
 Ensure all dependencies are installed by running flutter pub get.
