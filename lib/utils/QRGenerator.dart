@@ -1,7 +1,6 @@
 class QRGenerator {
-  static String generateQRData() {
-    final baseUserId = 'user-id-12345-abcde';
+  static String generateQRData(String userId) {
     final timestamp = DateTime.now().millisecondsSinceEpoch;
-    return '$baseUserId-$timestamp';
+    return '$userId-$timestamp';
   }
 }

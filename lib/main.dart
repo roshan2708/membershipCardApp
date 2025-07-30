@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:virtaulmembershipcardapp/screens/MembershipScreen.dart';
+import 'package:virtaulmembershipcardapp/screens/SplashScreen.dart';
 import 'package:virtaulmembershipcardapp/themes/AppTheme.dart';
 
 void main() {
@@ -20,11 +20,12 @@ class MyApp extends StatelessWidget {
     return Consumer<ThemeProvider>(
       builder: (context, themeProvider, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Virtual Membership Card',
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: themeProvider.themeMode,
-          home: const MembershipScreen(),
+          home: const SplashScreen(),
         );
       },
     );

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:virtaulmembershipcardapp/themes/AppTheme.dart';
 import 'package:provider/provider.dart';
+import '../constants/colors.dart';
 
 class ThemeToggle extends StatelessWidget {
   const ThemeToggle({super.key});
@@ -9,10 +11,11 @@ class ThemeToggle extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return IconButton(
-      icon: Icon(
+      icon: FaIcon(
         themeProvider.themeMode == ThemeMode.light
-            ? Icons.dark_mode
-            : Icons.light_mode,
+            ? FontAwesomeIcons.moon
+            : FontAwesomeIcons.sun,
+        color: AppColors.secondary,
       ),
       onPressed: () {
         themeProvider.toggleTheme();
